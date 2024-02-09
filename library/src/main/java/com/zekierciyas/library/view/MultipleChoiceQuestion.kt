@@ -84,7 +84,9 @@ fun MultipleChoiceQuestion(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Checkbox(
-                    colors = CheckboxDefaults.colors(checkedColor = multipleOptionUI.uncheckedColor),
+                    colors = CheckboxDefaults.colors(
+                        checkedColor = multipleOptionUI.uncheckedColor,
+                        checkmarkColor = multipleOptionUI.checkedColor),
                     checked = answer in selectedAnswers,
                     onCheckedChange = null,
                     modifier = Modifier.padding(8.dp)

@@ -11,9 +11,16 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import com.zekierciyas.library.model.MultipleOptionUI
 import com.zekierciyas.library.model.QuestionType
+import com.zekierciyas.library.model.SingleOptionUI
 import com.zekierciyas.library.model.SurveyModel
+import com.zekierciyas.library.model.SurveyOutlinedText
+import com.zekierciyas.library.model.SurveyText
+import com.zekierciyas.library.model.TextOptionUI
 import com.zekierciyas.library.view.SurveyScreen
 
 class MainActivity : ComponentActivity() {
@@ -54,6 +61,50 @@ fun SurveyView() {
     )
     SurveyScreen(
         survey = sampleSurvey,
+        backgroundColor = Color.White,
+        singleOptionUI = SingleOptionUI(
+            questionTitle = SurveyText(
+                color = Color.DarkGray,
+                fontWeight = FontWeight.ExtraBold
+            ),
+            answer = SurveyText(
+                color = Color.DarkGray,
+                fontWeight = FontWeight.Medium
+            ),
+            selectedColor = Color.White,
+            unSelectedColor = Color.Gray,
+            borderColor = Color.Gray
+        ),
+        multipleOptionUI = MultipleOptionUI(
+            questionTitle = SurveyText(
+                color = Color.DarkGray,
+                fontWeight = FontWeight.ExtraBold
+            ),
+            answer = SurveyText(
+                color = Color.DarkGray,
+                fontWeight = FontWeight.Medium
+            ),
+            checkedColor = Color.Gray,
+            uncheckedColor = Color.White,
+            borderColor = Color.Gray
+        ),
+        textOptionUI = TextOptionUI(
+            questionTitle = SurveyText(
+                color = Color.DarkGray,
+                fontWeight = FontWeight.ExtraBold
+            ),
+            answer = SurveyText(
+                color = Color.Gray,
+                fontWeight = FontWeight.Medium
+            ),
+            borderColor = Color.Gray,
+            backgroundColor = Color.White,
+            surveyOutlinedText = SurveyOutlinedText(
+                focusedTextColor = Color.DarkGray,
+                unfocusedContainerColor = Color.White,
+                focuedLabelColor = Color.DarkGray
+            )
+        ),
         callbackAnswers =  {
 
         },
