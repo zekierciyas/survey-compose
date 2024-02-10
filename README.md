@@ -1,4 +1,6 @@
 # Survey View 
+[![](https://jitpack.io/v/zekierciyas/survey-compose.svg)](https://jitpack.io/#zekierciyas/survey-compose)
+
 Android library written in Jetpack Compose, containing a fully configurable survey/questionnaire screen.
 
 <img src="/previews/preview_video.gif" align="center" height="660"/>
