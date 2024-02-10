@@ -1,6 +1,8 @@
 # Survey View 
 Android library written in Jetpack Compose, containing a fully configurable survey/questionnaire screen.
 
+<img src="/previews/preview_video.gif" align="center" height="660"/>
+
 ## Gradle
 
 **Step 1** : Add the JitPack repository to your build file
@@ -23,6 +25,9 @@ implementation 'com.github.zekierciyas:survey-compose:1.0.0'
 ```
 
 ## Usage
+
+<img src="/previews/preview_image.jpg" align="right" height="660"/>
+
 
 ``` kotlin
 @Composable
