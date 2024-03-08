@@ -1,5 +1,6 @@
 # Survey View 
 [![](https://jitpack.io/v/zekierciyas/survey-compose.svg)](https://jitpack.io/#zekierciyas/survey-compose)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-survey--compose-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/8480)
 
 Android library written in Jetpack Compose, containing a fully configurable survey/questionnaire screen.
 
